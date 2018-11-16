@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>LAB4 PD input</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Formularz</div>
+        
+        <form action="" id="form1" method="get">
+            <label for="im">Imie</label>
+            <input type="text" name="imie" id="im" value="" maxlength="3"/><br/>
+            <label for="pas">Haslo</label>
+            <input type="password" name="pass" id="pas"/><br/>
+            <label for="ch">checkbox</label>
+            <input type="checkbox" name="check" id="ch"/><br/>
+            <label for="radio">Radio</label>
+            <input type="radio" name="rad" id="radio"/><br/>
+            <!--<input type="radio" name="rad"id="radio2"/><br/>--->
+            <label for="res2">Reset</label>
+            <input type="reset" name="res" id="res2"/><br/>
+            <label for="f7">PLik</label>
+            <input type="file" name="plik" id="f7"/><br/>
+            <label for="f8">Ukryte</label>
+            <input type="hidden" name="ukryte" id="f8"/><br/>
+            <label for="f9">obraz</label>
+            <input type="image" name="obraz" id="f9"/><br/>
+            <label for="f10">przycisk</label>
+            <input type="button" name="przycisk" id="f10"/><br/>
+            
+				<p>new</p>
+            
+            <label for="f11">email</label>
+            <input type="email" name="poczta" id="f11" required="required"/><br/>
+            <label for="f12">numer (1-5)</label>
+            <input type="number" name="numer" id="f12" required="required" name="quantity" min="1" max="5"/><br/>
+            
+    
+            <label for="f14">kolor</label>
+            <input type="color" name="kolor" value="#ff0000" id="f14"/><br/>
+            
+            <label for="f13">data</label>
+            <input type="date" name="data" id="f13"/><br/>
+            <label for="f15">data max</label>
+            <input type="date" name="data" max="1979-12-31" id="f15"/><br/>
+            <label for="f16">data min</label>
+            <input type="date" name="data" min="2000-01-02" id="f16"/><br/>
+            <label for="f17">datatime local</label>
+			  <input type="datetime-local" name="bdaytime" id="f17"><br/>
+			  <label for="f18">Month</label>
+            <input type="month" name="bdaymonth" id="f18"><br/>
+            <label for="f19">Range</label>
+            <input type="range" name="points" min="0" max="10" id="f19"><br/>
+            <label for="f20">Search</label>
+            <input type="search" name="search" id="f20"><br/>
+            <label for="f21">telefon</label>
+            <input type="tel" name="telus" id="f21"><br/>
+            <label for="f22">Czas</label>
+            <input type="time" name="czas" id="f22"><br/>
+            <label for="f23">URL</label>
+            <input type="url" name="link" id="f23"><br/>
+            <label for="f24">Tydzień week</label>
+            <input type="week" name="tydzien" id="f24"><br/>
+            <p>list attribute</p>
+					<input list="browsers">
+					<datalist id="browsers">
+				  <option value="Internet Explorer">
+				  <option value="Firefox">
+				  <option value="Chrome">
+				  <option value="Opera">
+				  <option value="Safari">
+				</datalist>
+      
+                 <br/><br/>
+
+            <input type="submit" value="Wyslij"/>
+        </form>
+        
+        <br/><br/><br/>
+        <p>New input types</p>
+        <p>color
+date
+datetime
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week</p>
+    <p>New Input Attributes</p>
+        <p>autocomplete
+autofocus
+form
+formaction
+formenctype
+formmethod
+formnovalidate
+formtarget
+height and width
+list
+min and max
+multiple
+pattern (regexp)
+placeholder
+required
+step</p>
+     
+        
+    </body>
+</html>
