@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>LAB5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        
+        <form action="" id="form1" method="get">
+          
+            <label for="im">Imię</label>
+            <input type="text" name="imie" id="im" maxlength="20"/><br/>
+            <label for="naz">Nazwisko</label>
+            <input type="text" name="nazwisko" id="naz" maxlength="30"/><br/>
+            <label for="phone">Nr Telefonu</label>
+            <input type="tel" name="telefon" id="phone" /><br/>
+            <label for="ple2">Płeć</label>
+            <select id="ple2">
+                <optgroup label="Płeć">
+                    <option value="Kraków">Mężczyzna</option> 
+                    <option value="Warszawa">Kobieta</option>             
+                </optgroup>
+            </select> <br/>
+            <label for="klauz">Klauzula poufności: </label>
+            <input type="checkbox" name="klauzula" id="klauz" required="required"/>Wyrażam zgodę na przetwarzanie danych osobowych<br/>
+            <label for="plik2">Plik</label>
+            <input type="file" name="plik" id="plik2" /><br/>
+            <input type="hidden" name="ukryty" /><br/>
+
+            <input type="submit" value="Wyślij"/>
+           
+        </form>
+        
+    </body>
+</html>

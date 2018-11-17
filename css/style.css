@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 17, 2018, 3:21:18 PM
+    Author     : student
+*/
+
+
+
+p {font-size: 10px !important;}
+.paragraf {font-size: 20px;
+}
+#para {font-size: 30px;}
+p[class] {color:red;}
+p[class="para1"] {color:blue;}
+li:first-child {color: yellow}
+a:hover {color: purple;}
+*{margin: 0px; padding: 0px;}
+
+div p {color: black;}
+div > p {color: black;}
+p + p {color: black;}
+p~p {color: black;}
+
