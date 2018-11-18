@@ -25,3 +25,8 @@ div > p {color: black;}
 p + p {color: black;}
 p~p {color: black;}
 
+p:first-letter {font-size: 20px;}
+p:first-line {text-decoration: underline};
+
+p.test::before {content:'PRZED';}
+p.test::after {content:'PO';}
