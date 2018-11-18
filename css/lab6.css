@@ -8,3 +8,42 @@ and open the template in the editor.
     Author     : student
 */
 
+.boks { width: 600px;
+        height: 600px;
+        background-color: cyan;
+        background-image: url("../img/google.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: 50% 50%;
+        
+        border-width: 5px;
+        border-style: dashed;
+        border-color: red;
+        
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+        margin: 0 auto;
+        padding: 10px;
+/*        
+        margin: 10px 20px 30px 40px;*/
+/*        border: 2px solid red;*/
+        
+/*        background: black url("../img/google.png") no-repeat scroll left top;*/
+
+}
+p {
+/*    letter-spacing: -2px;
+   line-height: 20px;*/
+    text-transform: capitalize;
+/*    white-space: nowrap;*/
+    word-spacing: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+p>span {
+    vertical-align: sub;
+    text-decoration: line-through;
+    text-indent: 10px;
+}
