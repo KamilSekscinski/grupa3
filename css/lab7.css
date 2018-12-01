@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-12-01, 14:27:37
+    Author     : student
+*/
+
+#div1 {
+/*    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    display: block;
+    overflow: scroll;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+    float:left;
+    margin:10px;*/
+border:10px;
+    
+}
+#div2 {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    display: block;
+    float:left;
+    margin:10px;
+    clear: both;
+}
+#div3 {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    display: block;
+    float:left;
+    margin:10px;
+    clear: left;
+}
+
+#div11 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: block;
+}
+
+#div12 {
+    width: 90px;
+    height: 90px;
+    background-color: green;
+    display: block;
+}
+
+/*#div0 {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    padding: 20px;
+    display: block;
+}*/
+
+.par1 {
+    display:block;
+    width: 400px;
+/*    height: 400px;*/
+    margin:10px;
+    float:left;
+    border: solid 10px black;
+}
+.par2 {
+    width: 400px;
+/*    height: 400px;*/
+    display:block;
+    margin:10px;
+    float:left;
+    border: solid 10px black;
+}
+.par3 {
+    float:left;
+    display:block;
+    margin:10px;
+    width: 800px;
+    border:10px;
+    clear: left;
+    border: solid 10px black;
+}
+.par4 {
+    width: 400px;
+/*    height: 400px;*/
+    display:block;
+    margin:10px;
+    float:left;
+    border:10px;
+    clear:left;
+    border: solid 10px black;
+}
+.par5 {
+    width: 400px;
+/*    height: 400px;*/
+    display:block;
+    margin:10px;
+    float:left;
+    border: solid 10px black;
+}
