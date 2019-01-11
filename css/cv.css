@@ -1,0 +1,122 @@
+/*cv kamil sekściński*/
+
+body {
+    background-color: #cccccc;
+}
+main {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+}
+/*header {
+    background-color: blue;
+}*/
+header figure {
+/*    width: 5cm;
+    float: left;*/
+}
+.blokGlowny {
+/*    background-color: red;*/
+}
+.contact_form {
+    border: solid black 1px;
+    padding: 5px;
+}
+
+header {
+/*    background: #faf;*/
+    color: white;
+    background-color: #666666;
+    border: 1px solid black;
+    
+/*    height: 6cm;*/
+}
+.datetd {
+    width: 20%;
+}
+.desctd {
+    width: 80%;
+}
+article table {
+/*    border: 1px black solid;*/
+}
+header figure img {
+/*    height: 5cm;*/
+}
+
+header h1 {
+    margin-left: 15px;
+    font-family: sans-serif;
+    font-size: 48pt;
+    text-transform: uppercase;
+}
+
+header h2 {
+    margin-left: 15px;
+    font-style: italic;
+}
+.menu {
+    margin:0 auto;
+    width: 400px;
+    
+    display:inline;
+  
+}
+.menu ul li {
+	display: inline;
+/*        border: 1px black solid;*/
+/*        background-color: red;*/
+        font-size: 30px;
+        color: graytext;
+        text-decoration: none;
+        padding: 15px;
+        
+}
+a {
+    text-decoration: none;
+}
+header a {
+    color: white;
+}
+
+article {
+/*    background: #ffa;*/
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 10px;
+}
+
+aside {
+/*    background: #aff;*/
+background-color: #cccccc;
+    border: 1px solid black;
+    display: inline block;
+    
+/*    width: 20vw;*/
+    float: right;
+    padding: 10px;
+}
+aside h3 {
+    border: 5px;
+}
+#stopka {
+    
+}
+footer {
+/*    background: #afa;*/
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+.uptop {
+    
+    float: right;
+    border: 1px black solid;
+        background-color: gray;
+        font-size: 30px;
+        padding: 5px;
+        margin-bottom: 2px;
+        text-decoration: none;
+        color: white; 
+}
