@@ -18,6 +18,9 @@ header figure {
 }
 .blokGlowny {
 /*    background-color: red;*/
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 10px;
 }
 .contact_form {
     border: solid black 1px;
@@ -61,6 +64,7 @@ header h2 {
     width: 400px;
     
     display:inline;
+    
   
 }
 .menu ul li {
@@ -78,13 +82,6 @@ a {
 }
 header a {
     color: white;
-}
-
-article {
-/*    background: #ffa;*/
-    border: 1px solid black;
-    overflow: hidden;
-    padding: 10px;
 }
 
 aside {
