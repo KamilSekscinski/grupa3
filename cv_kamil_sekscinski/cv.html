@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CV Kamil Sekściński</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href="css/cv.css" rel="stylesheet"/>
+        <meta name="description" content="Jestem informatykiem z 4-letnim doświadczeniem w administracji samorządowej.">
+        <meta name="keywords" content="cv, kamil sekściński">
+        <meta name="author" content="Kamil Sekściński">
+    </head>
+    <body>
+
+        <main class="kartka parent">
+
+            <header class="grid-col grid-col--4">
+
+                <img src="img/ham-menu.png" class="ham-icon" alt="" >
+
+                <nav class="menu hide" >
+                    <ul>
+                        <li><a href="#">CV</a></li>
+                        <li><a href="#profil">Profil</a></li>
+                        <li><a href="#doswiadczenie">Doświadczenie</a></li>
+                        <li><a href="#wyksztalcenie">Wykształcenie</a></li>
+                        <li><a href="#umiejetnosci">Umiejętności</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                        <li><a href="#stopka">Stopka</a></li>
+                    </ul>
+
+                </nav> 
+                <div itemscope itemtype="http://schema.org/Person">
+                    <div class="grid-col grid-col--3 parent centLeft">
+                        <h1 itemprop="name">Kamil Sekściński</h1>
+                        <h2 itemprop="jobTitle">Informatyk</h2>
+
+                        <section>
+                            <div class="grid-col grid-col--2">
+                                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <p>Adres:<br>
+                                        <span itemprop="streetAddress" class="spNag">
+                                            ul. Wojska Polskiego 69
+                                        </span>
+                                        <span itemprop="postalCode">18-400</span>
+                                        <span itemprop="addressLocality">Łomża</span>
+                                    </p>
+                                </div>
+
+                                <p>Telefon:
+                                    <span class="spNag" itemprop="telephone">840 229 089</span></p>
+                            </div>
+
+                            <div class="grid-col grid-col--2">
+                                <p>Email:<span class="spNag" itemprop="email">
+                                        kamil@testowy.net</span></p>
+                                <p>Data ur.:<span class="spNag" itemprop="birthDate">1992-02-18</span>
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="grid-col grid-col--1 cent">
+                        <figure>
+                            <img itemprop="image" src="img/cv_image.jpg" alt="Kamil Sekściński"/>
+                        </figure>
+                    </div>  
+                </div>
+
+            </header>
+
+            <div class="blokGlowny grid-col grid-col--4">
+
+                <section id="profil" >
+                    Jestem informatykiem z 4-letnim doświadczeniem w administracji samorządowej. 
+                    Samodzielnie koordynowałem projekt przebudowy sieci komputerowej w urzędzie gminy.
+                    Aktualnie uczę się programowania stron internetowych i w tym kierunku chcę się rozwijać.
+                </section>
+
+                <section id="doswiadczenie">
+
+                    <div class="nagh3"><h3>Doświadczenie</h3></div>
+                    <table>
+                        <tr>
+                            <td class="datetd">2014-10 do dziś</td>
+                            <td class="desctd"><b>Urząd Gminy w Kolnie</b><br>
+                                Informatyk
+                                <br>
+                                <p><b>Zakres obowiązków:</b><br>
+                                    Nadzór nad zapewnieniem prawidłowego funkcjonowania systemów informatycznych w Urzędzie
+                                    Zapewnienie bezpieczeństwa systemów informatycznych oraz danych
+                                    Dokonywanie napraw bieżących oraz usuwanie usterek sprzętu komputerowego<br>
+                                    <b>Osiągnięcia:</b><br>
+                                    Nadzorowałem projekt przebudowy sieci komputerowej w urzędzie.
+                                </p>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+                <section id="wyksztalcenie">
+                    <div class="nagh3"><h3>Wykształcenie</h3></div>
+                    <ul>
+                        <li>Politechnika Białostocka, Informatyka, magister</li>
+                        <li>Politechnika Białostocka, Aplikacje Internetowe Front-End Development - studia Podyplomowe</li>
+                    </ul>
+                </section>
+
+                <section id="umiejetnosci">
+                    <div class="nagh3"><h3>Umiejętności</h3></div>
+                    <table class="umiejetTb">
+                        <thead class="thColor">
+                            <tr>
+                                <td>Umiejętność</td>
+                                <td>Skala 1-10</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Język Angielski</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Win Server, Linux</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>sieci komputerowe</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>PHP, MySQL</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>HTML, CSS</td>
+                                <td>9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <section id="kontakt">
+                    <div class="nagh3"><h3>Kontakt</h3></div>
+                    <form action="mailto:test@sekscinski.net" class="contact_form"  id="formularz" method="post" enctype="text/plain" accept-charset="UTF-8">
+                        <label for="im">Imię</label>
+                        <input type="text" name="imie" id="im" value="" maxlength="10" required="required"/><br/>
+                        <label for="naz">Nazwisko</label>
+                        <input type="text" name="nazwisko" id="naz" value="" maxlength="20" required="required"/><br/>
+                        <label for="pho">Telefon</label>
+                        <input type="tel" name="telefon" id="pho"><br/>
+                        <label for="poczta">Email</label>
+                        <input type="email" name="email" id="poczta" required="required"/><br/>
+                        <label for="temat">Temat</label>
+                        <select id="temat">
+                            <optgroup label="Temat">
+                                <option value="Chcę o coś zapytać">Chcę o coś zapytać</option> 
+                                <option value="Oferta pracy">Oferta pracy</option>             
+                            </optgroup>
+                        </select> <br/>
+                        <label for="desc">Treść wiadomości</label>
+                        <textarea name="tresc" id="desc" required="required"></textarea><br/>
+                        <input type="checkbox" name="newsleter" id="news" />Wyrażam zgodę na newsletter<br/>
+                        <input type="checkbox" name="klauzula" id="klauz" required="required"/>Wyrażam zgodę na przetwarzanie danych osobowych<br/>
+
+                        <div class="btn_sub_res"><input type="submit" value="Wyślij"/><input type="reset" value="Reset"/></div>
+
+                    </form>
+                </section>
+            </div> 
+
+            <footer id="stopka" class="grid-col grid-col--4">
+                <p>
+                    Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji <br>
+                    (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).
+                </p>
+                <p>&copy; 2019 Kamil Sekściński</p>
+
+            </footer> 
+
+        </main>
+
+        <script src="js/cv.js"></script>
+
+    </body>
+</html>

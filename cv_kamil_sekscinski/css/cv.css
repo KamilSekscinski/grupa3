@@ -1,0 +1,326 @@
+/*cv kamil sekściński*/
+
+/*grid*/
+.parent {
+    overflow: hidden;
+    position: relative;
+}
+.grid-col {
+    float: left;
+}
+.grid-col--1 {
+    width: 25%;
+}
+.grid-col--2 {
+    width: 50%;
+}
+.grid-col--3 {
+    width: 75%;
+}
+.grid-col--4 {
+    width: 100%;
+}
+/*kartka*/
+body {
+    background-color: #cccccc;
+}
+.kartka {
+    width: 21cm;
+    margin: 0 auto;
+    padding: 1cm;
+    box-shadow: 2mm 2mm 8px #666;
+    border: 1px solid #444;
+    background-color: white;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+}
+/*naglowek*/
+header {
+    background-color: #2C3E50;
+    border: 1px solid black;
+    padding: 10px;
+    color: white;
+    }
+header h1 {
+    font-size: 40pt;
+    font-weight: 700;
+}
+header h2 {
+    font-size: 28px;
+}
+/*obrazek*/
+header figure img {
+    width: 194px;
+    float: right;
+}
+header a {
+    color: white;
+}
+.spNag {
+    display: block;
+}
+/*menu*/
+.ham-icon {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 15px;
+    padding: 5px;
+    z-index: 99;
+}
+.menu {
+    position: fixed;
+    z-index: 2;
+    right: 15px;
+    font-size: 20px;
+    background-color: rgba(90, 151, 255, 0.9)
+}
+.menu ul li {
+    display: block;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    margin-right: 20px;	  
+}
+.menu ul li a:hover {
+    background-color: royalblue;
+}
+.hide {
+    display: none;
+}
+/*tresc*/
+.blokGlowny {
+    border: 1px solid black;
+    padding: 10px;  
+}
+/* linki */
+a {
+    text-decoration: none;
+}
+/* nagłowek H3 */
+.nagh3 {
+    height: 30px;
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    margin-bottom: 12px;
+}
+h3 {
+    font-size: 24px;
+}
+/* doswiadczenie tabela */
+.datetd {
+    width: 20%;
+}
+.desctd {
+    width: 80%;
+}
+/* tabela umiejetnosci */
+.umiejetTb {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.umiejetTb .thColor {
+    background-color: gray;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.umiejetTb td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* formularz */
+.contact_form {
+    border: solid orangered 1px;
+    background-color: rgb(254, 249, 219);
+    border-radius: 15px;
+    padding: 15px;
+    line-height: 15px;
+    font-weight: bold; 
+}
+/*inputy w formularzu*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0 5px;
+    vertical-align:top;
+    border:1px solid #54A5DA;
+    height:27px;
+    background:#fff;
+    font-size:16px;
+    color: black;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+input:focus, textarea:focus {
+    background-color: #F1F1F1;
+}
+
+select {
+   padding:3px 3px 3px 5px;
+}
+textarea {
+   height:150px;
+   resize:vertical;
+   line-height:1.4em;
+   resize:vertical;
+}
+input[type="checkbox"] {
+    margin-top: 10px;
+    margin-left: 30px;
+    }
+/*przycisk wyslij*/
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgb(52, 152, 219);
+    height: 45px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: 1px solid black;
+    margin-top: 10px;
+    box-shadow: 2mm 2mm 8px #666;
+}
+input[type="submit"]:hover {
+    background-color: #3482d0;
+    box-shadow: none;
+}
+/* reset */
+input[type="reset"] {
+    background-color: #ff6666;
+    margin-left: 20px;
+}
+
+input[type="reset"]:hover {
+    background-color: #ff3333;
+    box-shadow: none;
+}
+.btn_sub_res {
+    text-align: center;
+}
+/* stopka */
+footer {
+    background-color: #2C3E50;
+    border: 1px solid black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+  
+ 
+  /*rwd*/
+  
+  /*mniej niż 768px szerokosci*/
+@media screen and (max-width: 768px) {
+    .grid-col {
+        width: 100%;
+        float: none;
+    }
+    .kartka {
+        padding: 0 !important;
+        font-size: 28px !important;
+    }
+    header {
+        font-size: 30px;
+    }
+    .centLeft {
+        margin-left: 10%;
+    }
+    .cent {
+        text-align: center;
+    }
+    header h2 {
+        font-size: 32pt !important;
+        font-weight: 400;
+    }
+    header figure img {
+        width: 300px !important;
+        height: 384px;
+        float: none !important;
+    }
+    /*menu*/
+    .ham-icon {
+        position: fixed !important;
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .menu {
+        position: fixed !important;   
+    }
+    .menu ul li {
+        font-size: 28px !important;
+    }
+    /* nagłowek H3 */
+    .nagh3 {
+        background-color: #2C3E50;
+        height: 50px !important;
+        color: white;
+        text-align: center;
+        margin-bottom: 12px;
+        margin-left: -10px;
+    }
+    h3 {
+        font-size: 36px !important;  
+    }
+    .umiejetTb .thColor {
+        font-size: 30px !important;
+    }
+    /*formularz*/
+    .contact_form {
+        border: none !important; 
+        margin: -10px;
+        border-radius: 0 !important;
+        line-height: 15px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    select,
+    textarea {
+        height:32px !important;
+        width: 98% !important;
+        margin-top: 15px !important;
+        font-size: 20px !important;
+    }
+    textarea {
+        height:150px !important;
+    }
+    input[type="checkbox"] {
+        margin-top: 20px !important;
+        height: 20px;
+        margin-left: 20px !important;
+    }
+    footer {
+        font-size: 26px !important;
+    }
+}
+
+/*więcej niż 768px szerokosci*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .kartka {
+        width: 100%;
+    }
+} 
+    
+/*więcej niż 992px szerokosci*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .kartka {
+        width: 100%;
+    }
+}
+ 
