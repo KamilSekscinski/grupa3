@@ -1,0 +1,110 @@
+.nav-list {
+    padding: 0.5*$base-unit 0;
+    margin-top: 6*$base-unit;
+    li {
+        border-top: 1px solid $color-3;
+        text-align: center;
+        a {
+            color: $white;
+            padding: 1.5*$base-unit 0;
+            display: block;
+            &:hover {
+                color: $color-4;
+            }
+            @media screen and (min-width: $bp-desktop) {
+                color: $black;
+                &:hover {
+                    border-bottom: 2px solid $color-4;
+                }
+            }
+        }
+        @media screen and (min-width: $bp-desktop) {
+            display:inline-block;
+            border-top: 0;
+            margin-left: $base-unit;
+        }
+    }
+    @media screen and (min-width: $bp-desktop) {
+        margin-top:0;
+        text-align: right;
+    } 
+}
+
+.nav-Container {
+    height:5* $base-unit;
+    overflow: hidden;
+    position: relative;
+    body.open & {
+        // .nav-Container otrzyma 'height: 100vh;' , tylko wtedy gdy <body> będzie miało klasę 'open' (<body class="open")
+        height: 100vh;      
+    }
+    .logo {
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        top:20px;
+    }
+}
+/*
+    powyższą deklaarację można też zapisać w ten sposób:
+    body.open {
+        .nav-Container {
+            height: 100vh; 
+        }
+    }
+    co oznacza: dla .nav-Container zagnieżdżonego w <body class="open"> przyjmij 'height: 100vh;'
+*/
+
+
+
+
+
+
+/********************************************************************************************************/
+
+nav {
+    body.open & { // poniższe style zadziałają dla <nav>, tylko wtedy gdy <body> otrzyma klasę 'open' (body="open")
+        background-color: $color-1;
+        color: $white;
+    } 
+}
+
+/*
+    powyższą deklaarację można też zapisać w ten sposób:
+    body.open {
+        .nav {
+            height: 100vh; 
+        }
+    }
+    j.w.
+*/
+
+
+
+
+/********************************************************************************************************/
+
+
+button.nav-Button {
+    display:block;
+    width:40px;
+    height:32px;
+    background-color: transparent;
+    border:0;
+    position: absolute; 
+    // position absolute pozycjonuje element względem rodzica mającego deklarację 'position: relative'
+    // w naszym przypadku od .nav-Container, gdyż jest to jego bezpośredni przodek (rodzic), który ma 'position: relative'
+    top: 2.5* $base-unit;
+    margin-top: -16px;
+    right: $space;
+    span {
+        display:block;
+        width:100%;
+        height:3px;
+        margin-bottom:3px;
+        background-color: $black;
+    }
+    @media screen and (min-width: $bp-desktop) {
+        display:none;
+    }
+}

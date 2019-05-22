@@ -1,0 +1,77 @@
+
+html{
+    font-family: $font;
+    line-height: $line_height;
+    font-size: $font_size_body;
+    color: $color_1;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+h1, .h1{
+    font-size: $font_size_h1;
+    margin-bottom: $space;
+}
+h2, .h2{
+    font-size: $font_size_h2;
+    margin-bottom: $space;
+}
+h3, .h3{
+    font-size: $font_size_h3;
+    margin-bottom: $space;
+}
+p{
+    font-size: $font_size_body;
+    margin-bottom: $space;
+}
+small{
+    font-size: $font_size_body2;
+}
+
+
+.btn{
+    background-color: $color_4;
+    border: 1px solid $color_4;
+    color: $white;
+    padding: .5*$space $space;
+    min-width: 5 * $space;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: $font-size-body2;
+    &:hover{
+        color: $white;
+        background-color: $color-4;
+    }
+}
+
+
+.wrapper{
+    
+    padding-left: $space;
+    padding-right: $space;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+
+    @media (min-width: $bpoint_tab){
+        padding-left: 2*$space;
+        padding-right: 2*$space;
+    }
+
+
+}

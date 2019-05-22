@@ -1,0 +1,60 @@
+.hero{
+
+    height: 450px;
+    background-image: url(../img/hero-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: $white;
+    position: relative;
+
+    @media (min-width: $bpoint_tab){
+        height: 600px;
+        background-image: url(../img/hero-tab.jpg);
+    }
+
+    @media (min-width: $bpoint_desk){
+        height: 100vh;
+        background-image: url(../img/hero-desk.jpg);
+    }
+
+    &-cont{
+        position: absolute;
+        left: $space;
+        
+        @media (min-width: $bpoint-tab){
+            left: 2*$space;
+            bottom: 3*$space;
+        }
+
+    }
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        
+        $pattern-color: rgba(0,0,0,.2);
+        //background-color: $pattern-color;
+        background: linear-gradient(to top, transparent 1px, $pattern-color 1px, $pattern-color 2px, transparent 2px), linear-gradient(to left, transparent 1px, $pattern-color 1px, $pattern-color 2px, transparent 2px);
+        background-size: 3px 3px;
+    }
+    /**/
+    &:after{
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 40%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        
+        $pattern-color: rgba(0,0,0,.2);
+        //background-color: $pattern-color;
+        background: linear-gradient(to bottom, transparent, rgba(0,0,0,.4) 3*$space);
+    }
+
+}
