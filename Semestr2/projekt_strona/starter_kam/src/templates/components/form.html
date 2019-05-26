@@ -1,0 +1,60 @@
+<section class='form' data-js="form">
+    <div class='wrapper'>
+        <h3>Our form</h3>
+        <div class="form_cont">
+            <form action="" class="contact_form"  id="formularz" method="post" enctype="text/plain" accept-charset="UTF-8">
+                <div class="form_2">
+                    <div>
+                        <label for="im">Field for text</label>
+                        <input type="text" name="imie" id="im" value="" maxlength="10" placeholder="tekst" required="required"/>
+                        <span class="form-error-msg">Wrong text!</span>
+                    </div>
+                    <div>
+                        <label for="poczta">Field for email</label>
+                        <input type="email" name="email" id="poczta" placeholder="adres@poczta.pl" required="required"/>
+                        <span class="form-error-msg">Wrong text!</span>
+                    </div>
+                    <div>
+                        <label for="pattern">Field for text with pattern(postal)</label>
+                        <input type="text" name="pattern" 
+                        pattern="([0-9]{2})-([0-9]{3})" title="Three letter country code" placeholder="xx-xxx" required>
+                        <span class="form-error-msg">Wrong text!</span>
+                    </div>
+                </div>
+                
+                <div class="form_2">
+                    <div>
+                        <label for="select">Field for select</label>
+                        <select id="select">
+                        <optgroup label="Temat">
+                            <option value="Chcę o coś zapytać">Chcę o coś zapytać</option> 
+                            <option value="Oferta pracy">Oferta pracy</option>             
+                        </optgroup>
+                        
+                    </select>
+                    <span class="form-error-msg">Wrong value!</span>
+                    </div>
+                    <div>
+                        <label for="newsleter">Are you sure?</label>
+                        <input type="radio" name="newsleter" id="news" required="required" />Yes
+                        <input type="radio" name="newsleter" id="news" />No
+                        <span class="form-error-msg">Nothing chcecked!</span>
+                    </div>
+                    <div>
+                        <label for="klauzula">Please agree with me...</label>
+                        <input type="checkbox" name="klauzula" id="klauz" required="required"/>Checkbox label
+                        <span class="form-error-msg">Check something!</span>
+                    </div>
+                    
+                </div>
+               
+
+                <div class="btn_sub"><input type="submit" value="Send form"/>
+                    <!-- <input type="reset" value="Reset"/> -->
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</section>

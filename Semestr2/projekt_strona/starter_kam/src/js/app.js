@@ -7,6 +7,7 @@ window.onload = function(){
     const btn_play = document.querySelector('.btn-play');
     const btn_pause = document.querySelector('.btn-pause');
     var btn_myBar = document.getElementById("btn-myBar"); 
+    
 
     hamburger.onclick = function(){
         body.classList.toggle('menu-isOpen');
@@ -42,20 +43,19 @@ window.onload = function(){
         return frame();
     }
 
+    const form_el = document.querySelector('[data-js=form');
+    const btn_submit = document.querySelector('[type=submit]');
 
-    // function move() {
-    //     var elem = document.getElementById("myBar"); 
-    //     var width = 10;
-    //     var id = setInterval(frame, 10);
-    //     function frame() {
-    //       if (width >= 100) {
-    //         clearInterval(id);
-    //       } else {
-    //         width++; 
-    //         elem.style.width = width + '%'; 
-    //         elem.innerHTML = width * 1 + '%';
-    //       }
-    //     }
-    //   }
+    btn_submit.onclick = function(event) {
+      event.preventDefault();
+      form_el.classList.add('is-submitted');
+      let isError = false;
+
+      // if (form_el) {
+      //   form_el.classList.add('form-error-msg');
+      // }
+      
+      
+    }
 
 }
