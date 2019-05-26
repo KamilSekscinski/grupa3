@@ -1,37 +1,38 @@
 .nav-list {
-    padding: 0.5*$base-unit 0;
-    margin-top: 6*$base-unit;
+    padding: 0.5*$base_unit 0;
+    margin-top: 6*$base_unit;
+    
     li {
-        border-top: 1px solid $color-3;
+        border-top: 1px solid $color_3;
         text-align: center;
         a {
             color: $white;
-            padding: 1.5*$base-unit 0;
+            padding: 1.5*$base_unit 0;
             display: block;
             &:hover {
-                color: $color-4;
+                color: $color_4;
             }
-            @media screen and (min-width: $bp-desktop) {
+            @media screen and (min-width: $bpoint_desk) {
                 color: $black;
                 &:hover {
-                    border-bottom: 2px solid $color-4;
+                    border-bottom: 2px solid $color_4;
                 }
             }
         }
-        @media screen and (min-width: $bp-desktop) {
+        @media screen and (min-width: $bpoint_desk) {
             display:inline-block;
             border-top: 0;
-            margin-left: $base-unit;
+            margin-left: $base_unit;
         }
     }
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bpoint_desk) {
         margin-top:0;
         text-align: right;
     } 
 }
 
 .nav-Container {
-    height:5* $base-unit;
+    height:5* $base_unit;
     overflow: hidden;
     position: relative;
     body.open & {
@@ -64,7 +65,7 @@
 
 nav {
     body.open & { // poniższe style zadziałają dla <nav>, tylko wtedy gdy <body> otrzyma klasę 'open' (body="open")
-        background-color: $color-1;
+        background-color: $color_1;
         color: $white;
     } 
 }
@@ -94,7 +95,7 @@ button.nav-Button {
     position: absolute; 
     // position absolute pozycjonuje element względem rodzica mającego deklarację 'position: relative'
     // w naszym przypadku od .nav-Container, gdyż jest to jego bezpośredni przodek (rodzic), który ma 'position: relative'
-    top: 2.5* $base-unit;
+    top: 2.5* $base_unit;
     margin-top: -16px;
     right: $space;
     span {
@@ -104,7 +105,7 @@ button.nav-Button {
         margin-bottom:3px;
         background-color: $black;
     }
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bpoint_desk) {
         display:none;
     }
 }

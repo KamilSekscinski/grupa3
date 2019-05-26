@@ -1,0 +1,66 @@
+.hero {
+    background-image: url(../img/hero-mob.jpg);
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    
+    
+
+    @media (min-width: $bpoint_tab ) {
+        background-image: url(../img/hero-tab.jpg);
+        height: 600px;
+    }
+    @media (min-width: $bpoint_desk ) {
+        background-image: url(../img/hero-desk.jpg);
+        height: 100vh;
+    }
+
+    &-cont {
+        z-index: 1;
+        position: absolute;
+        bottom: $base_unit;
+        left: 2*$base_unit;
+        color: $white;
+
+        @media (min-width: $bpoint_tab ) {
+            bottom: 2*$base_unit;
+            left: 2*$base_unit;
+        }
+        @media (min-width: $bpoint_desk ) {
+            bottom: 2*$base_unit;
+            left: 2*$base_unit;
+        }
+
+    }
+    &-title {}
+
+    .btn--red {
+        background-color: red;
+    }
+
+    .wrapper {
+        height: 100%;
+        
+    }
+    &:before {
+        position: absolute;
+        // background-color: rgba($color: #000000, $alpha: 0.35);
+        // background-image: linear-gradient(transparent, black 50%, transparent 70%);
+        background-image: linear-gradient(to right, black, transparent 80%);
+        
+
+        height: 100%;
+        width: 100%;
+        content: '';
+        
+    }
+    
+
+}
+// .hero_cont {
+//     position: absolute;
+//     bottom: 10px;
+// }

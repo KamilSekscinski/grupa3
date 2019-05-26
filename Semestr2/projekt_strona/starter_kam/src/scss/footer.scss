@@ -1,0 +1,33 @@
+.footer {
+
+    .wrapper {
+        // margin: 0 -$base_unit;
+    }
+    &_col {
+        width:50%;
+        float:left;
+        margin-bottom: $space;
+        padding: 0 $base_unit;
+        @media screen and (min-width: $bpoint_tab) {
+            width: 25%;
+        }
+        a {
+            color: $color_2;
+            font-size: $font_size_body2;
+            &:hover {
+                color: $color_4;
+            }
+        }
+        ul {
+            li {
+                margin-bottom: 0.5* $base_unit;
+            }
+        }
+    }
+    &_disclaimer {
+        clear:left;
+        font-size: $font_size_body2;
+        color: $color_2;
+        padding-left: $base_unit;
+    }
+}

@@ -11,15 +11,15 @@ html{
     box-sizing: inherit;
 }
 
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
 button{
     background: none;
     border: none;
     outline: none;
-}
-
-img {
-    width: 100%;
-    max-width: 100%;
 }
 
 h1, .h1{
@@ -60,7 +60,7 @@ small{
 
 
 .wrapper{
-    
+
     padding-left: $space;
     padding-right: $space;
     max-width: $container-max-width;

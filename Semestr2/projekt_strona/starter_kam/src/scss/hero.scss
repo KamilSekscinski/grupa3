@@ -20,6 +20,7 @@
 
     &-cont{
         position: absolute;
+        z-index: 2;
         left: $space;
         
         @media (min-width: $bpoint-tab){
@@ -58,3 +59,4 @@
     }
 
 }
+

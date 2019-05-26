@@ -13,12 +13,61 @@
 
 <body>
 
+    {#  ==============================
+        moduł: HEADER
+        zakres: position; transform; transition
+        do zrobienia/poprawienia: wygląd menu; 
+        dodatkowo: animacje pojawiania/chowania się menu; hovery (animowane) na elementach
+    #}
     {% include "components/header.html" %}
+    {#  ==============================
+        moduł: HERO
+        zakres: background-size:cover; pseudoelementy before i after; linear-gradient
+        do zrobienia/poprawienia: stylowanie kontenera z tekstem; 
+        dodatkowo: animacje pojawiania/chowania się menu; hovery (animowane) na elementach
+        linki: https://leaverou.github.io/css3patterns/
+    #}
     {% include "components/hero.html" %}
-    {% include "components/boxes.html" %}
+    {#  ==============================
+        moduł: FIGURE
+        zakres: figure; picture; srcset
+        do zrobienia/poprawienia: ?
+        linki: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+    #}
     {% include "components/figure.html" %}
+    {#  ==============================
+        moduł: BOXES
+        zakres: flexbox, box-shadow
+        do zrobienia/poprawienia: ?
+        dodatkowo: umieścić tak aby zajmował całą szerokość i wysokość EKRANU, ale nie jako background
+        linki: https://flexboxfroggy.com/
+    #}
+    {% include "components/boxes.html" %}
     
+
+    {#  ==============================
+        moduł: WYSIWYG
+        zakres: struktura projektu
+        do zrobienia/poprawienia: dorzucanie kolejnych elementów
+    #}
+    
+
+
     {% include "components/wysiwyg.html" %}
+
+
+    {# tu będą kolejne moduły ... #}
+    {% include "components/video.html" %}
+    {% include "components/youtube.html" %}
+
+
+    {#  ==== TO DO ===================
+        moduł: FOOTER
+        zakres: display: inline-block; float
+        do zrobienia/poprawienia: pocięcie i ostylowanie
+    #}
+
+
     
     <script src="js/app.js" type="text/javascript"></script>
 
