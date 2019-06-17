@@ -1,0 +1,80 @@
+.boxes{
+   &-cont{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -.5*$space;
+        margin-right: -.5*$space;
+   }
+}
+.box{
+    display: inline-block;
+    padding: .5*$space;
+    flex-basis: 100%;
+    
+    @include min-media(420px){
+        flex-basis: 50%;
+    }
+    @include min-media($bpoint-tab){
+        flex-basis: 33.3334%;
+    }
+    @include min-media($bpoint-desk){
+        flex-basis: 25%;
+    }
+    
+    &--text-center{
+        text-align: center;
+    }
+
+    &-img{
+        overflow: hidden;
+        margin-bottom: .5*$space;
+        
+        /* jako opcja */
+        &--circle{
+            border-radius: 50%;
+        }
+        
+        
+        img{
+            vertical-align: middle; // zniwelowanie odstępu na dole
+        }
+        
+        
+        &--elastic{
+            position: relative;
+            padding-bottom: 100%;
+            background-color: $color-3;
+            
+            img{
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        
+        &--vcenter{
+            img{
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    
+    &-text{
+        color: $color-2;
+        font-size: $font-size-body2;
+        
+        &--center{
+            text-align: center;
+        }
+    }
+    
+    &-header{
+        display: inline-block;
+        
+        &--center{
+            display: block;
+            text-align: center;
+        }
+    }
+}

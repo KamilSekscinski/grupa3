@@ -7,12 +7,13 @@
 
     <title></title>
     <link rel="stylesheet" href="css/style.css">  
+    
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 
 </head>
 
 <body>
-
+    {% include "components/sprite.html" %}
     {#  ==============================
         moduł: HEADER
         zakres: position; transform; transition
@@ -20,6 +21,7 @@
         dodatkowo: animacje pojawiania/chowania się menu; hovery (animowane) na elementach
     #}
     {% include "components/header.html" %}
+    
     {#  ==============================
         moduł: HERO
         zakres: background-size:cover; pseudoelementy before i after; linear-gradient
